@@ -16,8 +16,12 @@ module.exports = {
 			{
 				test: /\.styl$/,
 				loader: 'style-loader!css!autoprefixer!stylus-loader'
+			},
+			{
+				test: /\.(otf|eot|svg|ttf|woff|png)/,
+				loader: 'url-loader?limit=8192'
 			}
-		]
+	]
 	},
 	resolve: {
 		extensions: ["", ".js", ".jsx", ".styl"]
