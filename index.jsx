@@ -8,7 +8,7 @@ let icon = require('./PICTO29.png');
 class Preview extends Component{
 	render(){
 		return(
-			<p>IM SELECTED !!!</p>
+			<p>Dernier avis :</p>
 		)
 	}
 }
@@ -16,7 +16,7 @@ class Preview extends Component{
 
 ReactDOM.render(
 	<Card
-		title="test"
+		title="Tous vos avis"
 		icon={icon}
 		preview={<Preview/>}
 	>
